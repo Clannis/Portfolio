@@ -521,8 +521,16 @@
 /* Item */
 
 	.item {
-		box-shadow: 0.15em 0.5em 0.5em 0 rgba(0, 0, 0, 0.2);
+		box-shadow: 0.15em 0.5em 0.5em rgba(0, 0, 0, 0.2);
+		border-radius: 10px;
 		margin-bottom: 40px;
+		transition: all .3s;
+		overflow: hidden;
+
+		&:hover {
+			transform: translateY(-1.5rem) scale(1.03);
+			box-shadow: 0.25em 1.2em 0.5em rgba(0, 0, 0, 0.5);
+		}
 
 		header {
 			background: #fff;
