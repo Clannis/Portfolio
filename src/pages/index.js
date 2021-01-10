@@ -157,7 +157,7 @@ const IndexPage = () => (
           <form method="post" action="mailto:Dodds.James90@gmail.com">
             <div className="row">
               <div className="col-12">
-                <input type="submit" value="Send Message" />
+                <input type="submit" value="Email Me" />
               </div>
             </div>
           </form>
