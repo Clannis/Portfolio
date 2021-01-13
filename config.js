@@ -23,9 +23,9 @@ module.exports = {
       url: 'https://twitter.com/JDodds_Clannis',
     },
     {
-      icon: 'fa-facebook',
-      name: 'Facebook',
-      url: 'https://www.facebook.com/james.dodds.5437',
+      icon: 'fa-medium',
+      name: 'Medium',
+      url: 'https://clannis.medium.com/',
     },
     {
       icon: 'fa-envelope-o',
