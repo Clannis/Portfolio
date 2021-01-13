@@ -63,7 +63,7 @@ const IndexPage = () => (
             <div className="col-4 col-12-mobile">
               <article className="item">
                 <a href="https://hubblebook.herokuapp.com" className="image fit">
-                  <img src={pic2} alt="" />
+                  <img src={pic2} alt="HubbleBook Welcome Screen" />
                 </a>
                 <header>
                   <h3>HubbleBook</h3>
