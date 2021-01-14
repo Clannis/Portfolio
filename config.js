@@ -18,9 +18,9 @@ module.exports = {
       url: 'https://github.com/Clannis',
     },
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/JDodds_Clannis',
+      icon: 'fa-linkedin',
+      name: 'Linkedin',
+      url: 'www.linkedin.com/in/james-r-dodds',
     },
     {
       icon: 'fa-medium',
