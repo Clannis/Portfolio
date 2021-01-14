@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/SideBar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
@@ -12,6 +13,8 @@ import pic6 from '../assets/images/pic06.jpg';
 import pic7 from '../assets/images/pic07.jpg';
 import pic8 from '../assets/images/pic08.jpg';
 import Scroll from '../components/Scroll';
+
+import { faReact, faBootstrap, faJsSquare, faHtml5, faCss3Alt, faSass } from '@fortawesome/free-brands-svg-icons'
 
 const sections = [
   { id: 'top', name: 'Intro', icon: 'fa-home' },
@@ -34,6 +37,7 @@ const IndexPage = () => (
               Full-Stack Web Developer
             </h2>
             <p>Come check out my projects below.</p>
+            <p className="red">** Site is under construction **</p>
           </header>
 
           <footer>
@@ -62,56 +66,81 @@ const IndexPage = () => (
           <div className="row">
             <div className="col-4 col-12-mobile">
               <article className="item">
-                <a href="https://hubblebook.herokuapp.com" className="image fit">
-                  <img src={pic2} alt="HubbleBook Welcome Screen" />
-                </a>
-                <header>
-                  <h3>HubbleBook</h3>
-                </header>
+                <div className="item__side item__side--front">
+                  <img src={pic2} alt="HubbleBook Welcome Screen" className="image fit"/>
+                  <header>
+                    <h3>HubbleBook</h3>
+                  </header>
+                </div>
+                <div className="item__side item__side--back">
+                  <h3>Technologies</h3>
+                  <h4><u>Frontend</u></h4>
+                  <p>Javascript (ES6) <FontAwesomeIcon icon={faJsSquare} color="yellow"/> | React <FontAwesomeIcon icon={faReact} color="blue"/> | Redux | Bootstrap <FontAwesomeIcon icon={faBootstrap} color="purple"/></p>
+                  <h4><u>Backend</u></h4>
+                  <p>Ruby | Rails</p>
+                  <a className="button" href="#">Visit Site</a>
+                </div>
               </article>
               <article className="item">
-                <a href="/#" className="image fit">
-                  <img src={pic3} alt="" />
-                </a>
-                <header>
-                  <h3>Texas-PWS-Operator-Practice-Exams</h3>
-                </header>
-              </article>
-            </div>
-            <div className="col-4 col-12-mobile">
-              <article className="item">
-                <a href="/#" className="image fit">
-                  <img src={pic4} alt="" />
-                </a>
-                <header>
-                  <h3>Dog-Training-App</h3>
-                </header>
-              </article>
-              <article className="item">
-                <a href="/#" className="image fit">
-                  <img src={pic5} alt="" />
-                </a>
-                <header>
-                  <h3>Natours</h3>
-                </header>
+                <div className="item__side item__side--front">
+                  <img src={pic3} alt="" className="image fit"/>
+                  <header>
+                    <h3>Texas-PWS-Operator-Practice-Exams</h3>
+                  </header>
+                </div>
+                <div className="item__side item__side--back">
+
+                </div>
               </article>
             </div>
             <div className="col-4 col-12-mobile">
               <article className="item">
-                <a href="/#" className="image fit">
-                  <img src={pic6} alt="" />
-                </a>
-                <header>
-                  <h3>Dolor Penatibus</h3>
-                </header>
+                <div className="item__side item__side--front">
+                  <img src={pic4} alt="" className="image fit"/>
+                  <header>
+                    <h3>Dog-Training-App</h3>
+                  </header>
+                </div>
+                <div className="item__side item__side--back">
+
+                </div>
               </article>
               <article className="item">
-                <a href="/#" className="image fit">
-                  <img src={pic7} alt="" />
-                </a>
-                <header>
-                  <h3>Orci Convallis</h3>
-                </header>
+                <div className="item__side item__side--front">
+                  <img src={pic5} alt="" className="image fit"/>
+                  <header>
+                    <h3>Natours</h3>
+                  </header>
+                </div>
+                <div className="item__side item__side--back">
+                  <h3>Technologies</h3>
+                  <h4><u>Frontend</u></h4>
+                  <p>HTML <FontAwesomeIcon icon={faHtml5} color="orange"/> | CSS <FontAwesomeIcon icon={faCss3Alt} color="blue"/> | Sass <FontAwesomeIcon icon={faSass} color="pink"/></p>
+                </div>
+              </article>
+            </div>
+            <div className="col-4 col-12-mobile">
+              <article className="item">
+                <div className="item__side item__side--front">
+                  <img src={pic6} alt="" className="image fit"/>
+                  <header>
+                    <h3>Dolor Penatibus</h3>
+                  </header>
+                </div>
+                <div className="item__side item__side--back">
+
+                </div>
+              </article>
+              <article className="item">
+                <div className="item__side item__side--front">
+                  <img src={pic7} alt="" className="image fit"/>
+                  <header>
+                    <h3>Orci Convallis</h3>
+                  </header>
+                </div>
+                <div className="item__side item__side--back">
+
+                </div>
               </article>
             </div>
           </div>

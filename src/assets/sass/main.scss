@@ -521,15 +521,40 @@
 /* Item */
 
 	.item {
-		box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.2);
-		border-radius: 10px;
-		margin-bottom: 40px;
-		transition: all .3s;
-		overflow: hidden;
+		position: relative;
 
-		&:hover {
-			transform: translateY(-1.5rem) scale(1.03);
-			box-shadow: 0 1.2em 0.5em rgba(0, 0, 0, 0.5);
+		&__side {
+			overflow: hidden;
+			height: 100%;
+			backface-visibility: hidden;
+			transition: all .3s;
+			border-radius: 10px;
+			margin-bottom: 40px;
+			box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.2);
+
+			&--back {
+				background-color: darkgray;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 100%;
+				transform: translate(-50%, -50%) rotateY(-180deg);
+
+				h3, h4, p{
+					color: white;
+				}
+			}
+		}
+
+		&:hover &__side--front {
+			transform: rotateY(180deg);
+		}
+
+		&:hover &__side--back {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotateY(0);
 		}
 
 		header {
@@ -1158,3 +1183,7 @@
 			}
 
 	}
+
+.red {
+	color: red;
+}
