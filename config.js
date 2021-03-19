@@ -23,9 +23,9 @@ module.exports = {
       url: 'www.linkedin.com/in/james-r-dodds',
     },
     {
-      icon: 'fa-medium',
-      name: 'Medium',
-      url: 'https://clannis.medium.com/',
+      icon: 'fas fa-rss-square',
+      name: 'Blog',
+      url: 'https://clannis.wordpress.com/',
     },
     {
       icon: 'fa-envelope-o',
